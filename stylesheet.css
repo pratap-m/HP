@@ -161,6 +161,19 @@ nav .fa{
     
 }
 
+/* Start your journey here */
+
+.group-parent {
+    position: absolute;
+    top: 1492px;
+    left: 498px;
+    width: 444px;
+    height: 25px;
+    text-align: center;
+    font-size: var(--font-size-base);
+}
+
+
 
 /* Responsive design */
 
@@ -279,8 +292,14 @@ height: 885px;
 }
  .group-icon {
 
-position: relative;
-height: 16.72px;
+/*position: relative;
+height: 16.72px;*/
+     
+     position: absolute;
+    top: 4.15px;
+    left: 0;
+    width: 14px;
+    height: 16.72px;
     
 
 }
