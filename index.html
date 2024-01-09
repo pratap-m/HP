@@ -1,101 +1,247 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        
-        <title>Heart Prague</title>
-        
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-    
-    </head>
-    
-    <body>
-        
-        <section class="header">
-            <nav>
-            <a href="index.html"><img src="images/logo.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                   <ul>
-                    <li><a href="#">I'M NEW</a></li>
-                    <li><a href="#">WHO WE ARE</a></li>
-                    <li><a href="#">GIVE</a></li>
-                    <li><a href="#">GET INVOLVED</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                       <li><svg xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M1 0V43" stroke="white"/></svg></li>
-                       <li><img class="live-stream-icon" alt="" src="images/livestream.svg"></li>
-                       <li><img class="social-icon" alt="" src="images/fb.svg"></li>
-                       <li><img class="social-icon" alt="" src="images/insta.svg"></li>
-                       <li><img class="social-icon" alt="" src="images/youtube.svg"></li>
-                       <li><svg xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M1 0V43" stroke="white"/></svg></li>
-                       
-         <li >
-                       <select class="lang-switcher__select" onchange="">
-            
-            
-            <option value="#" data-flag="#" selected="">EN</option>
-            <option value="#" data-flag="#">CS</option>
-            <option value="#" data-flag="#">UA</option>
-    </select>
-                       </li>
-                       
-                       
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
-            
-            <div class="text-box">
-                <p>Join us on Sundays at 10 am (English/Czech) or at 12 am (English)</p>
-                <a href="#" class="hero-btn">JOIN US THIS SUNDAY</a>
-            
-            </div>
-        
-        </section>
-        
-        <section class="welcome-hp">
-           
-            <h2>Welcome to Heart Prague</h2>
-            <span class="we-are-a">&nbsp;</span>
-            <span class="we-are-a">&nbsp;</span>
-            <p class="we-are-a-container">
-<span class="we-are-a">We are a community of Internationals and Czechs united in our love for Jesus and our city. We believe Jesus is the hope of the world, and He is at the center of all we do.</span>
-<span class="we-are-a">&nbsp;</span>
-<span class="we-are-a">You may be close to God or feel far away from Him, but no matter where you are on your journey of faith...</span>
-            </p>
-            <span class="we-are-a">&nbsp;</span>
-            <h3 class="you-belong-here">...You belong here</h3>
-        </section>
-    <section class="rectangle-section">
-    <div class="group-parent">
-        <img class="group-icon" alt="" src="./images/group.svg">
-        
-            <h4 class="start-your-journey">start your journey here</h4>
-        
-        </div>
-        
-      
-</section>
-        
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Heart Prague</title>
+	<link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Navbar-->
+	<!-- Header section -->
+
+	<section class="header">
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>
+			<div class="nav-links">		
+			<ul>
+				<li><a href="#">I'M NEW</a></li>
+				<li><a href="#">WHO WE ARE</a></li>
+				<li><a href="#">GIVE</a></li>
+				<li><a href="#">GET INVOLVED</a></li>
+				<li><a href="#">SUPPORT</a></li>
+				<li><a class="line" src="images/line.svg">|</a></li>
+				<li><img src="images/livestream.svg"></li>
+				<li><img src="images/fb.svg"/></li>
+				<li><img src="images/insta.svg"/></li>
+				<li><img src="images/youtube.svg"/></li>
+				<li><a class="line" src="images/line.svg">|</a></li>
+				<li>
+					<select class="lang-switcher__select" onchange="">
+						<option value="#" data-flag="#" selected="">EN</option>
+						<option value="#" data-flag="#">CS</option>
+						<option value="#" data-flag="#">UA</option>
+					</select>
+					
+				</li>	
+			</ul>
+				
+			</div>
+				<!--<i class="fa fa-bars"></i>-->
+		</nav>
+		<!-- Header text -->
+		<div class=" header header-text">
+			<span>Join us on Sundays at 10 am (English/Czech) or at 12 pm (English) or at 4 pm Ukrainian</span>
+			<button class="btn" input type="button">Join us this sunday</button>
+		</div>
+	</section>
+
+	<!-- Welcome HP section -->
+	<section class="welcome-hp">
+		
+		<div class="welcome-hp-text">
+			<div>
+				<h2>Welcome to Heart Prague</h2>
+			</div>
+			<div>
+				<p>We are a community of Internationals and Czechs united in our love for</p>
+				<p>Jesus and our city. We believe Jesus is the hope of the world, and He is at</p>
+				<p>The center of all we do.</p>
+				<br>
+				<p>You may be close to God or feel far away from Him, but no matter where</p>
+				<p>You are on your journey of faith...</p>
+
+			</div>
+			<div>
+				<h3>...You belong here</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Start your journey section -->
+	<section class="column-container your-journey">
+		<div class="inline-flex heading-with-logo">
+			<img alt="" src="images/group.svg">
+			<h4>start your journey here</h4>
+		</div>
+
+		<div class="image-container">
+			<div class="your-journey-left">
+
+				<div>
+					<img alt="" src="images/image-2@2x.png">
+					<p>Join us on Sundays at 10 am (English/Czech) or at 12 am (English)</p>
+				</div>
+
+			</div>
+			<div class="your-journey-right">
+				
+				   <div>
+					<div>
+						<img alt="" src="images/rectangle-1@2x.png">
+						<p>Join a Belong group</p>
+					</div>
+					<div>
+						<img alt="" src="images/rectangle-7@2x.png">
+						<p>Learn about Heart Prague</p>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img alt="" src="images/rectangle-8@2x.png">
+						<p>Donate</p>
+					</div>
+					<div>
+						<img alt="" src="images/rectangle-9@2x.png">
+						<p>Read Our Last Newsletter</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div>
+			<button class="btn" input type="button">about heart prague</button>
+		</div>
+	</section>
+
+	
+	<!-- Upcoming events section -->
+	<section class="upcoming-events">
+		<div class="inline-flex heading-with-logo">
+			<img alt="" src="images/group.svg">
+			<h4>upcoming events</h4>
+		</div>
+		<div class="card-container">
+			<div class="event">
+				<div class="card-image">
+					<img src="images/rectangle-11@2x.png">
+				</div>
+				<div class="card-contents">
+					<div class="date">14-16. 9. 2023</div>
+					<a href="#" class="title">Youth Camp 2023</a>
+					<p>Youth camps provide an exciting experience for young people, offering opportunities for growth,
+						learning, and making new friends.</p>
+					<a href="#" class="link">JOIN US FOR SUMMER CAMP →</a>
+				</div>
+			</div>
+			<div class="event">
+				<div class="card-image">
+					<img src="images/rectangle-12@2x.png">
+				</div>
+				<div class="card-contents">
+					<div class="date">26. 10. 2023</div>
+					<a href="#" class="title">Worship Night #43</a>
+					<p>Worship nights are powerful gatherings where people come together to express their faith through
+						music, prayer, and reflection.</p>
+					<a href="#" class="link">EXPERIENCE WORSHIP NIGHT →</a>
+				</div>
+			</div>
+			<div class="event">
+				<div class="card-image">
+					<img src="images/rectangle-13@2x.png">
+				</div>
+				<div class="card-contents">
+					<div class="date">14-16. 9. 2023</div>
+					<a href="#" class="title">“Ladies First” Meeting</a>
+					<p>Ladies First meetings provide a safe and supportive space for women to connect, share
+						experiences, and empower each other to achieve their goals.</p>
+					<a href="#" class="link">JOIN THE LADIES →</a>
+				</div>
+			</div>
+			<div class="event">
+				<div class="card-image">
+					<img src="images/rectangle-14@2x.png">
+				</div>
+				<div class="card-contents">
+					<div class="date">14-16. 9. 2023</div>
+					<a href="#" class="title">Tech Team Workshop</a>
+					<p>Tech team meetings are essential to ensure the smooth operation of a technology-based project,
+						allowing for collaboration and troubleshooting.</p>
+					<a href="#" class="link">BECOME THE TECH →</a>
+				</div>
+			</div>
+		</div>
+
+		<button class="btn" input type="button">events</button>
+
+	</section>
+
+	<!--Footer section -->
+	<section class="footer">
+		<div class="inline-flex heading-with-logo">
+			<img alt="" src="images/group-filled.svg">
+			<h4>connect with heart prague</h4>
+		</div>
+		<div class="footer-middle">
+			<div class="address">
+				<img alt="" src="images/mappinline.svg">
+				<p>Heart Prague Church</p>
+				<p>Brunclíkova 1878/8, 162 00</p>
+				<p>Prague 6 -Břevnov</p>
+				<p>Czechia</p>
+				<p>(2 mins walk from Petřiny Metro stop)</p>
+			</div>
+			<div class="social-icons">
+				<img alt="" src="images/fb.svg">
+				<img alt="" src="images/insta.svg">
+				<img alt="" src="images/youtube.svg">
+				
+			</div>
+			<div class="footer-links">
+				<img alt="" src="images/group-filled.svg">
+				<ul>
+					<li><a href="#">Get Baptised</a></li>
+					<li><a href="#">Join a Belong Group</a></li>
+					<li><a href="#">Join Us</a></li>
+				</ul>
+			</div>
+			
+		</div>
         
-    
-    </body>
-   <!----------JavaScript for Toggle Menu-------------> 
-    <script>
-    var navLinks = document.getElementById("navLinks");
-        function showMenu(){
-            
-            navLinks.style.right = "0";
-        }
-        
-        function hideMenu(){
-            
-            navLinks.style.right = "-200px";
-        }
-    </script>
+		<hr />
+		
+		<div class="footer-menu">
+		
+			<ul>
+				<li><a href="#">About Us</a</li>
+				<li><a href="#">Read Our Newsletter</a</li>
+				<li><a href="#">How Is a Sunday Like?</a</li>
+				<li><a href="#">Contact Us</a</li>
+				<li><a href="#">GDPR Privacy Policy</a</li>
+			</ul>
+		</div>
+		
+		<div class="footer-end">
+			<div>
+				<img alt="" src="images/logo-white-2@2x.png">
+			</div>
+			<div>
+            <h4>Heart Prague &copy; 2024</h4>
+			</div>
+		</div>
+		
+	</section>
+
+	<!--Java script for toggle menu-->
+<script>
+
+</script>
+</body>
 
 </html>
