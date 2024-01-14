@@ -156,7 +156,7 @@ p {
 }
 
 /* Header section */
-header {
+.header {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -545,7 +545,146 @@ footer .footer-end {
   height: auto;
 }
 
+/* I am new page section */
 
+.header > .page-header{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7)),url(../images/image1@2x.png);
+
+
+}
+
+
+/* I am new page */
+
+.Im-new-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/I-am-new-cover.png);
+  background-position:10% 25%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+.page-title h2{
+color: #FFF;
+margin-top: 100px;
+padding-bottom: calc(50vh - 50%);
+font-family: Kallimata;
+font-size: 6.5rem;;
+font-style: normal;
+font-weight: 400;
+ /* 8.21419rem */
+}
+
+/* Who we are page */
+
+.who-we-are-cover
+{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/who-we-are-cover.png);
+  background-position:50% 20%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+
+}
+
+/* Events page */
+.events-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/events-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Give page */
+
+.give-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/give-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Get involved */
+.get-involved-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/get-involved-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+/* help ukraine page */
+.ukraine-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/ukraine-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+/* contact-us page */
+.contact-us-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/contact-us-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+/* newsletter page */
+.newsletter-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/newsletter-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+/* support page */
+.support-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/support-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+/* join-us page */
+.join-us-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(0,9,30,0.7)),url(../images/join-us-cover.png);
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
 
 /* Responsive design break points*/
 
