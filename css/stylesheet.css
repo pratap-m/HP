@@ -77,6 +77,7 @@ img {
 
 .btn {
   background-color: #dcdcdc;
+  
   color: #000;
   padding: 0.5rem 1rem;
   display: inline-block;
@@ -88,6 +89,12 @@ img {
   transition: all 0.5s ease-out;
   margin-top: 1rem;
 }
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  background: #f44336;
+}
+
 
 /* Inline Icon with text */
 .inline-icon{
@@ -100,12 +107,6 @@ img {
 .inline-icon img{
   max-width: 40%;
   max-height: 40%;
-}
-
-.btn:hover {
-  color: white;
-  cursor: pointer;
-  background: #f44336;
 }
 
 li {
@@ -1383,6 +1384,100 @@ line-height: 155.023%; /* 1.744rem */
   opacity: .7;
 }
 
+/* About us page */
+
+.about-us-cover{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/events-cover.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.about-us-container{
+  display: flex;
+  max-width: 60%;
+  padding: 1rem;
+ 
+}
+.about-us-content-section{
+  flex: 0 0 50%;
+  padding: 0.5rem;
+  /*max-width: 60%;*/
+  
+}
+.about-us-image-section{
+ 
+  flex: 0 0 50%;
+  /*max-width: 50%;*/
+  
+}
+.about-us-image-section img{
+ display: block;
+ border-radius: 1rem;
+ padding: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+.about-us-content-section .about-us-title{
+  padding: 0rem 0.5rem;
+  text-transform: uppercase;
+  font-size: large;
+}
+.about-us-content-section .about-us-content .heading-with-logo{
+  padding: 2rem 0.5rem;
+  color: #5d5d5d;
+  font-size: small;
+}
+.about-us-content-section .about-us-content p{
+
+  padding: 0 0.5rem;
+  font-size: small;
+  line-height: 1.5;
+  text-align: justify;
+  
+}
+
+.about-us-content-section .about-us-social-icon{
+  padding: 1rem 0;
+
+}
+.about-us-content-section .about-us-social-icon i{
+  
+  color: #a52a2a;
+  font-size: medium;
+  padding: 0rem 0.6rem;
+}
+.about-us-content-section .about-us-social-icon i:hover{
+  color: #3d3d3d;
+}
+.about-us-content .btn a{
+  color:#000;
+}
+
+.about-team-message {
+  display: flex;
+  position: relative;
+  flex-basis: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 3.125rem 4.25rem;
+  /*padding: 3.125rem 6.25rem;*/
+
+}
+
+
+
 /* Events page */
 .events-cover {
   width: 100%;
@@ -1394,6 +1489,7 @@ line-height: 155.023%; /* 1.744rem */
   color: #FFF;
   text-align: center;
 }
+
 
 
 /* help ukraine page */
@@ -1899,7 +1995,7 @@ line-height: 155.023%; /* 1.744rem */
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 786px) {
 
   nav {
     display: none;
@@ -1923,7 +2019,14 @@ line-height: 155.023%; /* 1.744rem */
     flex-direction: column;
     width: 100%;
   }
-
+  
+  .about-us-container{
+   display: block;
+   flex-direction: column;
+    width: 100%;
+  }
+  
+  
   .footer-middle,.get-involved-container,
   .footer-menu {
     flex-direction: column;
