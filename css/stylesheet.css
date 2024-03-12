@@ -1331,38 +1331,18 @@ line-height: 155.023%; /* 1.744rem */
 .content-half ul li{
   list-style: disc;
 } 
-.serve-others{
+
+
+
+.get-involved-ways-to-serve-others{
   display: flex;
-  position: relative;
-  min-width: 300px;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 9, 0, 0.6)), url(../images/image\ 15.png);
-
-}
-
-.serve-others-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  color: #fff;
-  max-width: 960px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.ways-to-serve-others{
- display: flex;
- flex-wrap: wrap;
- padding: 2rem;
-}
-
-.ways-to-serve-others .inline-flex h4{
-  padding: 3rem 0;
-}
+  flex-wrap: wrap;
+  padding: 2rem;
+ }
+ 
+ .get-involved-ways-to-serve-others .inline-flex h4{
+   padding: 3rem 0;
+ }
 
 /* First the Grid */
 .gallery-grid {
