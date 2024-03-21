@@ -20,13 +20,16 @@
 *::after {
   box-sizing: border-box;
 }
-body{
+
+body {
   text-rendering: optimizeSpeed;
 }
+
 img {
-  
+
   max-width: 100%;
 }
+
 /* Custom variables */
 
 :root {
@@ -76,35 +79,69 @@ img {
 /* Reusable property */
 
 .btn {
-  background-color: #dcdcdc;
-  
-  color: #000;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  /* margin: 2rem 0;*/
+  display: inline-flex;
+  /* Allows the element to size according to its content */
+  background-color: transparent;
+  /* Button is transparent initially */
   border: none;
-  border-radius: 0.938rem;
-  cursor: pointer;
+  border-radius: 0.7rem;
   text-transform: uppercase;
-  transition: all 0.5s ease-out;
-  margin-top: 1rem;
-}
-.btn:hover {
-  color: white;
+  padding: 0.5rem 1rem;
+  /* Button padding, adjust for text content */
+  font-size: 16px;
+  /* Text size, adjust as needed */
   cursor: pointer;
-  background: #f44336;
+  /* Changes the cursor to a pointer */
+  text-align: center;
+  /* Ensures text is centered */
+  text-decoration: none;
+  /* Removes underline from links */
+  transition: all 0.5s ease;
+  /* Smooth transition for all properties */
+  margin: 0.8rem;
 }
 
+.btn-primary {
+  color: #FFF;
+  /* Text color for visibility on light backgrounds */
+  border: 1px solid #FFF;
+  /* Thinner border */
+}
+
+.btn-secondary {
+  color: #000;
+  border: 1px solid #000;
+  /* Thinner border */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+
+  background-color: #0056b3;
+  /* Slightly darker shade for primary button hover */
+  color: #fFF;
+  border-color: #004094;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #6c757d;
+  /* Different color for secondary button hover */
+  color: #FFF;
+  border-color: #545b62;
+
+}
 
 /* Inline Icon with text */
-.inline-icon{
+.inline-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
- min-width: 150px;
- min-height: 150px;
+  min-width: 150px;
+  min-height: 150px;
 }
-.inline-icon img{
+
+.inline-icon img {
   max-width: 40%;
   max-height: 40%;
 }
@@ -145,7 +182,6 @@ p {
 
 /* reusable components */
 
-
 .row-container {
   position: relative;
   display: flex;
@@ -184,115 +220,119 @@ p {
 /* reusable sections */
 
 /* Live stream section */
-.livestream-service{
+.livestream-service {
   display: flex;
   max-width: 74.75rem;
   min-height: 33.9375rem;
-flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 3.125rem;
-/*background: rgba(48, 48, 48, 0.80);*/
-
-background-image: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)), url(../images/image\ 7.png);
-mix-blend-mode: multiply;
-
+  background-image: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)), url(../images/image\ 7.png);
+  mix-blend-mode: multiply;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
- background-position: center;
- margin: 3rem auto;
- padding: 2.7rem;
+  background-position: center;
+  margin: 3rem auto;
+  padding: 2.7rem;
 }
-.livestream-service .btn{
+
+.livestream-service .btn {
   display: inline-flex;
   padding: 0.75rem 1.875rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
-border: 1px solid #FFF;
+  border: 1px solid #FFF;
 }
 
-.livestream-service h2{
+.livestream-service h2 {
   color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: 155.023%; /* 3.488rem */
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.023%;
 }
-.livestream-service p{
+
+.livestream-service p {
   color: #FFF;
   font-family: Inter;
-text-align: center;
-font-size: 1.125rem;
-padding: 0 .7rem;
-font-style: normal;
-font-weight: 700;
-line-height: 155.023%; /* 1.744rem */
-text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 0 .7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.023%;
+  text-transform: uppercase;
 
 }
 
 /* Ways to serve others */
-.ways-to-serve-others{
+.ways-to-serve-others {
   display: flex;
   max-width: 74.75rem;
   min-height: 33.9375rem;
-flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 3.125rem;
-
-/*background: rgba(48, 48, 48, 0.80);*/
-
-background-image: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)), url(../images/image\ 7.png);
-mix-blend-mode: multiply;
-
+  background-image: linear-gradient(rgba(48, 48, 48, 0.8), rgba(48, 48, 48, 0.8)), url(../images/image\ 7.png);
+  mix-blend-mode: multiply;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
- background-position: center;
- margin: 3rem auto;
- padding: 2.7rem;
+  background-position: center;
+  margin: 3rem auto;
+  padding: 2.7rem;
 }
-.ways-to-serve-others .btn{
+
+.ways-to-serve-others .btn {
   display: inline-flex;
   padding: 0.75rem 1.875rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   border-radius: 0.625rem;
-border: 1px solid #FFF;
+  border: 1px solid #FFF;
 }
 
-.ways-to-serve-others h2{
+.ways-to-serve-others h2 {
   color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: 155.023%; /* 3.488rem */
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.023%;
 }
-.ways-to-serve-others p{
+
+.ways-to-serve-others p {
   color: #FFF;
   font-family: Inter;
-text-align: center;
-font-size: 1.125rem;
-padding: 0 .7rem;
-font-style: normal;
-font-weight: 700;
-line-height: 155.023%; /* 1.744rem */
-text-transform: uppercase;
-
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 0 .7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.023%;
+  text-transform: uppercase;
 }
+
 .ways-to-serve-others p a {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* HOME PAGE */
-/* Header section */
+/* =============================================================================
+   PAGE: Home
+   Styles specific to the Home page.
+   ============================================================================= */
+
+/* ---------------------------------------------------------------------
+   SECTION: Header
+   PAGE: Home
+   --------------------------------------------------------------------- */
 .header {
   display: flex;
   flex-direction: column;
@@ -304,7 +344,6 @@ text-decoration: underline;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 nav {
   display: flex;
@@ -357,12 +396,11 @@ nav ul li a:hover {
   border-radius: 0.1875rem;
 }
 
-/* svg file, live stream and social medial*/
+/* svg file, live stream and social medial */
 nav ul li img {
   cursor: pointer;
 }
 
-/* Set the cursor pointer to default */
 .line {
   cursor: default;
   color: white;
@@ -387,8 +425,10 @@ nav .fa {
 }
 
 
-/* Welcome to HP section */
-
+/* ---------------------------------------------------------------------
+   SECTION: Welcome to Heart Prague
+   PAGE: Home
+   --------------------------------------------------------------------- */
 .welcome-hp {
   display: flex;
   position: relative;
@@ -400,21 +440,16 @@ nav .fa {
   background-repeat: no-repeat;
   background-position: center;
   padding: 3.125rem 4.25rem;
-  /*padding: 3.125rem 6.25rem;*/
 }
 
 .welcome-hp-text {
-
   text-align: center;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 155.023%;
-
-  /* 27.904px */
 }
 
 .welcome-hp h3 {
-
   text-align: center;
   font-family: var(--font-family-kallimata);
   font-size: 5.938rem;
@@ -424,8 +459,10 @@ nav .fa {
 }
 
 
-/* Start your journey here, section */
-
+/* ---------------------------------------------------------------------
+   SECTION: Start your journey here
+   PAGE: Home
+   --------------------------------------------------------------------- */
 .your-journey {
   background-color: #F6F6F6;
   padding: 3.125rem 4.25rem;
@@ -487,8 +524,10 @@ nav .fa {
 }
 
 
-/* Upcomg event section */
-
+/* ---------------------------------------------------------------------
+   SECTION: Upcomg event
+   PAGE: Home
+   --------------------------------------------------------------------- */
 .upcoming-events {
   position: relative;
   display: flex;
@@ -510,7 +549,7 @@ nav .fa {
 }
 
 .card-container .event {
-  
+
   max-width: 300px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   cursor: pointer;
@@ -523,7 +562,7 @@ nav .fa {
   object-position: center;
 }
 
-.card-container .event .card-image img:hover{
+.card-container .event .card-image img:hover {
   opacity: .7;
 }
 
@@ -533,7 +572,6 @@ nav .fa {
 }
 
 .card-container .event .card-contents .date {
-
   color: #C4C4C4;
   font-size: 0.875rem;
   font-style: normal;
@@ -542,7 +580,6 @@ nav .fa {
 }
 
 .card-container .event .card-contents .title {
-
   color: #303030;
   font-size: 1.125rem;
   font-style: normal;
@@ -553,13 +590,11 @@ nav .fa {
 }
 
 .card-container .event .card-contents p {
-
   color: #C4C4C4;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
 }
 
 .card-container .event .card-contents .link {
@@ -568,12 +603,12 @@ nav .fa {
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.16269rem */
-
 }
 
-/* Footer section */
-
+/* ---------------------------------------------------------------------
+   SECTION: Footer (Connect with heart prague)
+   PAGE: ALL
+   --------------------------------------------------------------------- */
 footer {
   position: relative;
   display: flex;
@@ -587,7 +622,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .footer-middle {
@@ -607,16 +641,13 @@ footer {
 .footer-middle .social-icons {
   display: inline-flex;
   justify-content: space-around;
-
   flex: 30%;
 }
 
 .footer-middle .social-icons img {
-
   max-width: 10%;
   min-width: 5%;
   height: auto;
-
 }
 
 .footer-middle .footer-links {
@@ -631,28 +662,23 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
 }
 
 .footer-links ul li a {
   color: #FFF;
-
   text-align: right;
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
   text-decoration-line: underline;
-
 }
 
 footer hr {
   display: inline-flex;
   justify-content: center;
   width: 50%;
-
 }
 
 .footer-menu {
@@ -660,13 +686,11 @@ footer hr {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-menu ul li {
   display: inline-flex;
   padding: 0.5rem 0.75rem;
-
 }
 
 .footer-menu ul li a {
@@ -675,8 +699,6 @@ footer hr {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
-
 }
 
 footer .footer-end {
@@ -686,7 +708,6 @@ footer .footer-end {
   justify-content: space-around;
   align-items: center;
   color: white;
-
 }
 
 .footer-end img {
@@ -697,17 +718,11 @@ footer .footer-end {
 
 
 
+/* =============================================================================
+   PAGE: I am new
+   Styles specific to the I am new page.
+   ============================================================================= */
 
-
-/* I am new page */
-
-/*.header>.page-header {
-  width: 100%;
-  height: 70vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7)), url(../images/image1@2x.png);
-
-
-}*/
 .Im-new-cover {
   width: 100%;
   height: 50vh;
@@ -727,81 +742,51 @@ footer .footer-end {
   font-size: 6.5rem;
   font-style: normal;
   font-weight: 400;
-  /* 8.21419rem */
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Sundays at heart prague
+   PAGE: I am new
+   --------------------------------------------------------------------- */
 .sundays-at-hp {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   padding: 1rem;
   justify-content: center;
   align-items: center;
 }
-.heading{
-  display: flex;
-  justify-content: center;
 
-}
-.sundays-at-hp .btn{
+.heading {
   display: flex;
-  flex-direction: row;
-  flex: 1 1 80%;
   justify-content: center;
-  align-items: center;
-}
-.heart-of-church{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 18.75rem;;
-  background-image: url("../images/HP-red-two.svg");
-  background-size: 12.10731rem 11rem;
-  background-repeat: no-repeat;
- background-position: center;
-  background-color: #303030;
-  margin: 1rem auto;
-}
-.heart-of-church p{
-  color: #FFF;
-  font-family: Inter;
-text-align: center;
-font-size: 1.125rem;
-padding: 0 .7rem;
-font-style: normal;
-font-weight: 700;
-line-height: 155.023%; /* 1.744rem */
-text-transform: uppercase;
 }
 
-.sundays-service{
+.sundays-service {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   min-width: 100px;
   margin: auto;
 }
-.sundays-service .timeline h4{
+
+.sundays-service .timeline h4 {
   color: #E2516D;
-font-size: 1.625rem;
-font-style: normal;
-font-weight: 400;
-/*line-height: 155.023%;*/ /* 2.51913rem */
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
 }
+
 .timeline {
   border-top: 2px dashed;
   border-color: blue !important;
-  
   padding: 1rem;
-  
 }
-
-
 
 .sundays-service .timeline:nth-child(even) {
   border-left: 2px dashed;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-margin-right: 30px;
+  margin-right: 30px;
   padding-right: 0;
 }
 
@@ -809,22 +794,65 @@ margin-right: 30px;
   border-right: 2px dashed;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  margin-left: 30px; 
+  margin-left: 30px;
   padding-left: 0;
 }
 
 .sundays-service .timeline:first-child {
   border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .sundays-service .timeline:last-child {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.how-sunday-look-like{
+.sundays-at-hp .btn {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ---------------------------------------------------------------------
+   SECTION: Heart of church
+   PAGE: I am new
+   --------------------------------------------------------------------- */
+.heart-of-church {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 18.75rem;
+  background-image: url("../images/HP-red-two.svg");
+  background-size: 12.10731rem 11rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #303030;
+  margin: 1rem auto;
+}
+
+.heart-of-church p {
+  color: #FFF;
+  font-family: Inter;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 0 .7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 155.023%;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------
+   SECTION: What does our sunday look like
+   PAGE: I am new
+   --------------------------------------------------------------------- */
+.how-sunday-look-like {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -835,11 +863,12 @@ margin-right: 30px;
   background-repeat: no-repeat;
   background-position: center;
   padding: 3.125rem 4.25rem;
-  /*padding: 3.125rem 6.25rem;*/
 }
+
 .how-sunday-look-like h4 {
   padding: 2rem 0;
 }
+
 .how-sunday-look-like-container {
   display: flex;
   flex-wrap: wrap;
@@ -849,15 +878,18 @@ margin-right: 30px;
   text-align: justify;
   text-wrap: pretty;
 }
+
 .how-sunday-look-like-container .how-sunday-row {
   width: 300px;
 }
+
 .icon img {
   width: 15%;
   height: auto;
   object-fit: cover;
   object-position: center;
 }
+
 .how-sunday-title {
   color: #E2516D;
   font-family: Inter;
@@ -865,100 +897,103 @@ margin-right: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.744rem */
 }
+
 .how-sunday-description {
   color: #C4C4C4;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
 }
+
 .how-sunday-description a {
   color: #000;
   cursor: pointer;
   text-decoration: underline;
 }
 
+/* ---------------------------------------------------------------------
+   SECTION: What's next
+   PAGE: I am new
+   --------------------------------------------------------------------- */
+.what-next-events {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 3.125rem 4.25rem;
+  align-items: center;
+}
 
-  .what-next-events{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      background-color: #FFF;
-      padding: 3.125rem 4.25rem;
-      align-items: center;
-    }
-    
-    .what-next-card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      padding: 2rem;
-      text-align: justify;
-      text-wrap: pretty;
-    }
-    
-    .what-next-card-container .event {
-      
-      max-width: 300px;
-      box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-      cursor: pointer;
-    }
-    
-    .what-next-card-container .event .what-next-card-image img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-    
-    .what-next-card-container .event .what-next-card-image img:hover{
-      opacity: .7;
-    }
-    
-    .what-next-card-container .event .what-next-card-contents {
-      padding: 0 20px;
-    
-    }
-    
-    
-    .what-next-card-container .event .what-next-card-contents .title {
-    
-      color: #303030;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 155.023%;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
-    
-    .what-next-card-container .event .what-next-card-contents p {
-    
-      color: #C4C4C4;
-      font-size: 0.875rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 155.023%;
-      /* 1.35644rem */
-    }
-    
-    .what-next-card-container .event .what-next-card-contents .link {
-      color: #303030;
-      font-size: 0.75rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 155.023%;
-      /* 1.16269rem */
-    
-    }
-  
+.what-next-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.what-next-card-container .event {
+
+  max-width: 300px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.what-next-card-container .event .what-next-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.what-next-card-container .event .what-next-card-image img:hover {
+  opacity: .7;
+}
+
+.what-next-card-container .event .what-next-card-contents {
+  padding: 0 20px;
+
+}
+
+.what-next-card-container .event .what-next-card-contents .title {
+
+  color: #303030;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.023%;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.what-next-card-container .event .what-next-card-contents p {
+
+  color: #C4C4C4;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.023%;
+}
+
+.what-next-card-container .event .what-next-card-contents .link {
+  color: #303030;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.023%;
+}
 
 
-/* Who we are page */
+
+/* =============================================================================
+   PAGE: Who we are 
+   Styles specific to the Who we are page.
+   ============================================================================= */
+
 .who-we-are-cover {
   width: 100%;
   height: 50vh;
@@ -970,6 +1005,11 @@ margin-right: 30px;
   text-align: center;
 
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Leadership team
+   PAGE: Who we are
+   --------------------------------------------------------------------- */
 .who-we-are {
   position: relative;
   display: flex;
@@ -977,8 +1017,10 @@ margin-right: 30px;
   background-color: #FFF;
   padding: 3.125rem 4.25rem;
   align-items: center;
+
 }
-.team-container{
+
+.team-container {
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -987,32 +1029,38 @@ margin-right: 30px;
   text-align: justify;
   text-wrap: pretty;
 }
-.team-card{
+
+.team-card {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   text-align: center;
 }
-.team-image img{
+
+.team-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   object-position: center;
 }
-.team-name a{
-color: #303030;
-font-size: 1.125rem;
-font-weight: 500;
-line-height: 155.023%; /* 1.744rem */
+
+.team-name a {
+  color: #303030;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 155.023%;
 }
-.team-title, .team-introduction{
+
+.team-title,
+.team-introduction {
   color: #C4C4C4;
   font-size: 0.875rem;
   font-weight: 500;
-  line-height: 155.023%; /* 1.35644rem */
+  line-height: 155.023%;
 }
-.team-btn{
+
+.team-btn {
   border: none;
   outline: 0;
   padding: 8px;
@@ -1023,11 +1071,17 @@ line-height: 155.023%; /* 1.744rem */
   width: 100%;
   font-size: 18px;
   margin-top: auto;
- 
+
 }
-.team-btn:hover{
+
+.team-btn:hover {
   opacity: 0.7;
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Our beliefs
+   PAGE: Who we are
+   --------------------------------------------------------------------- */
 
 .our-beliefs {
   display: flex;
@@ -1038,25 +1092,31 @@ line-height: 155.023%; /* 1.744rem */
   align-items: center;
   background-color: #F6F6F6;
   padding: 3.125rem 4.25rem;
-  /*padding: 3.125rem 6.25rem;*/
-
 }
+
 .our-beliefs h4 {
   padding: 2rem 0;
 }
+
 .our-beliefs-text {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 155.023%;
   text-wrap: pretty;
-  /* 27.904px */
 }
+
 .our-beliefs-text a {
   color: #000;
   text-decoration: underline;
   font-weight: 800;
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Our values
+   PAGE: Who we are
+   --------------------------------------------------------------------- */
+
 .our-values {
   position: relative;
   display: flex;
@@ -1068,11 +1128,12 @@ line-height: 155.023%; /* 1.744rem */
   background-repeat: no-repeat;
   background-position: center;
   padding: 3.125rem 4.25rem;
-  /*padding: 3.125rem 6.25rem;*/
 }
+
 .our-values h4 {
   padding: 2rem 0;
 }
+
 .our-values-container {
   display: flex;
   flex-wrap: wrap;
@@ -1082,15 +1143,18 @@ line-height: 155.023%; /* 1.744rem */
   text-align: justify;
   text-wrap: pretty;
 }
+
 .our-values-container .values-row {
   width: 300px;
 }
+
 .icon img {
   width: 15%;
   height: auto;
   object-fit: cover;
   object-position: center;
 }
+
 .values-title {
   color: #E2516D;
   font-family: Inter;
@@ -1098,23 +1162,27 @@ line-height: 155.023%; /* 1.744rem */
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.744rem */
 }
+
 .values-description {
   color: #C4C4C4;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 155.023%;
-  /* 1.35644rem */
 }
+
 .values-description a {
   color: #000;
   cursor: pointer;
   text-decoration: underline;
 }
 
-/* Give  page */
+/* =============================================================================
+   PAGE: Give
+   Styles specific to the give page.
+   ============================================================================= */
+
 .give-cover {
   width: 100%;
   height: 50vh;
@@ -1125,6 +1193,12 @@ line-height: 155.023%; /* 1.744rem */
   color: #FFF;
   text-align: center;
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Your Giving Transforms Lives In Prague and Beyond
+   PAGE: Give
+   --------------------------------------------------------------------- */
+
 .give {
   position: relative;
   display: flex;
@@ -1134,10 +1208,8 @@ line-height: 155.023%; /* 1.744rem */
   align-items: center;
   background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
-  background-position:top;
-  background-size: 35% auto ;
-  
-  /*padding: 3.125rem 6.25rem;*/
+  background-position: top;
+  background-size: 35% auto;
 }
 
 .give-text {
@@ -1147,27 +1219,30 @@ line-height: 155.023%; /* 1.744rem */
   font-weight: 500;
   line-height: 155.023%;
   text-wrap: pretty;
-  /* 27.904px */
- 
 }
-.give .inline-flex h4{
-  padding: 3rem 0;
-}
+
+
 .give-text a {
   color: #000;
   text-decoration: underline;
   font-weight: 800;
 }
-.give h2{
+
+.give h2 {
   padding: 2rem 0;
   color: #303030;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
-  line-height: 155.023%; /* 3.488rem */
+  line-height: 155.023%;
 }
 
-.give-container{
+/* ---------------------------------------------------------------------
+   SECTION: Ways you can give
+   PAGE: Give
+   --------------------------------------------------------------------- */
+
+.give-container {
   display: flex;
   width: 100%;
   height: auto;
@@ -1178,13 +1253,19 @@ line-height: 155.023%; /* 1.744rem */
   text-align: justify;
   text-wrap: pretty;
 }
-.give-card{
+
+.give .inline-flex h4 {
+  padding: 3rem 0;
+}
+
+.give-card {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   text-align: left;
 }
-.give-image img{
+
+.give-image img {
   width: 100%;
   height: 200px;
   border-radius: 0.625rem;
@@ -1192,36 +1273,42 @@ line-height: 155.023%; /* 1.744rem */
   object-position: center;
 }
 
-.give-title{
+.give-title {
   color: #C4C4C4;
   font-size: 1.125rem;
   padding: 0.5rem 0;
   font-weight: 500;
-  line-height: 155.023%; /* 1.35644rem */
+  line-height: 155.023%;
   color: #303030;
   text-transform: uppercase;
 }
-.give-description{
+
+.give-description {
   color: #C4C4C4;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 155.023%;
 }
-.give-description span{
+
+.give-description span {
   color: #303030;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 155.023%;
-
 }
-.give-description img{
+
+.give-description img {
   width: 50%;
   height: auto;
   object-position: center;
   object-fit: contain;
 }
 
-/* Get involved page */
+/* =============================================================================
+   PAGE: Get involved
+   Styles specific to the Get involved page.
+   ============================================================================= */
+
 .get-involved-cover {
   width: 100%;
   height: 50vh;
@@ -1233,6 +1320,11 @@ line-height: 155.023%; /* 1.744rem */
   text-align: center;
 }
 
+/* ---------------------------------------------------------------------
+   SECTION: Connect with others like you
+   PAGE: Get involved
+   --------------------------------------------------------------------- */
+
 .get-involved {
   position: relative;
   display: flex;
@@ -1242,10 +1334,8 @@ line-height: 155.023%; /* 1.744rem */
   align-items: center;
   background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
-  background-position:top;
-  background-size: 35% auto ;
-  
-  /*padding: 3.125rem 6.25rem;*/
+  background-position: top;
+  background-size: 35% auto;
 }
 
 .get-involved-text {
@@ -1255,34 +1345,32 @@ line-height: 155.023%; /* 1.744rem */
   font-weight: 500;
   line-height: 155.023%;
   text-wrap: pretty;
-  /* 27.904px */
- 
 }
-.get-involved .inline-flex h4{
-  padding: 3rem 0;
-}
+
 .get-involved-text a {
   color: #000;
   text-decoration: underline;
   font-weight: 800;
 }
-.get-involved h2{
+
+.get-involved h2 {
   padding: 2rem 0;
   color: #303030;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
-  line-height: 155.023%; /* 3.488rem */
+  line-height: 155.023%;
 }
 
-/* Get-involved image text */
+.get-involved .inline-flex h4 {
+  padding: 3rem 0;
+}
+
+/* ---------------------------------------------------------------------
+   SECTION: How to get involved
+   PAGE: Get involved
+   --------------------------------------------------------------------- */
 .get-involved-container {
-  /*display: flex;
-  justify-content:center;
-  flex-wrap: wrap;*/
-  /*text-align: justify;*/
-  /*text-wrap: pretty;
-  align-items: flex-start;*/
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -1290,60 +1378,62 @@ line-height: 155.023%; /* 1.744rem */
   padding: 2rem;
   text-align: justify;
   text-wrap: pretty;
-  
-  
 }
-.get-involved-card{
+
+.get-involved-card {
   display: flex;
   flex: 1 1 50%;
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
   align-items: center;
-  
-
 }
-.get-involved-container img{
+
+.get-involved-container img {
   display: flex;
   width: 100%;
   border-radius: 1rem;
   flex-wrap: wrap;
   object-fit: cover;
   object-position: center;
-
 }
 
- .image-half {
-  flex-basis:  30%;
+.image-half {
+  flex-basis: 30%;
   padding: 1rem;
 }
 
 .content-half {
- flex-basis:40%;
-  padding: 1rem; 
- 
+  flex-basis: 40%;
+  padding: 1rem;
 }
-.content-half p{
+
+.content-half p {
   font-size: medium;
 }
-.content-half ul{
- padding-left: 2rem;
+
+.content-half ul {
+  padding-left: 2rem;
 }
-.content-half ul li{
+
+.content-half ul li {
   list-style: disc;
-} 
+}
 
+/* ---------------------------------------------------------------------
+   SECTION: How can you serve others
+   PAGE: Get involved
+   --------------------------------------------------------------------- */
 
-
-.get-involved-ways-to-serve-others{
+.get-involved-ways-to-serve-others {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
- }
- 
- .get-involved-ways-to-serve-others .inline-flex h4{
-   padding: 3rem 0;
- }
+}
+
+.get-involved-ways-to-serve-others .inline-flex h4 {
+  padding: 3rem 0;
+}
 
 /* First the Grid */
 .gallery-grid {
@@ -1355,8 +1445,6 @@ line-height: 155.023%; /* 1.744rem */
   grid-gap: 1.5rem;
   justify-items: center;
   cursor: pointer;
-  
-
 }
 
 /* The Picture Frame */
@@ -1365,7 +1453,6 @@ line-height: 155.023%; /* 1.744rem */
   font-size: 1.2rem;
   text-align: center;
   color: #333;
-  
 }
 
 /* The Images */
@@ -1378,15 +1465,187 @@ line-height: 155.023%; /* 1.744rem */
   transition: opacity 0.25s ease-in-out;
 }
 
-
-
 .gallery-img:hover {
   opacity: .7;
 }
 
-/* About us page */
 
-.about-us-cover{
+/* =============================================================================
+   PAGE: Support
+   Styles specific to the Support page.
+   ============================================================================= */
+
+.support-cover {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/support-cover.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+   SECTION: Support others
+   PAGE: Support
+   --------------------------------------------------------------------- */
+
+.support-others {
+  position: relative;
+  display: flex;
+  flex-basis: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 25% auto;
+}
+
+.support-others-text {
+
+  color: #303030;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 155.023%;
+  text-wrap: pretty;
+}
+
+.support-others-text a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.support-others h2 {
+  padding: 2rem 0;
+  color: #303030;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 155.023%;
+}
+
+.support-others .inline-flex h4 {
+  padding: 3rem 0;
+}
+
+/* ---------------------------------------------------------------------
+   SECTION: Projects we support
+   PAGE: Support
+   --------------------------------------------------------------------- */
+
+.support-others-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.support-others-card {
+  display: flex;
+  flex: 1 1 50%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-others-container img {
+  display: flex;
+  width: 100%;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.support-others-image-half {
+  flex-basis: 30%;
+  padding: 1rem;
+
+}
+
+.support-others-content-half {
+  flex-basis: 40%;
+  padding: 1rem;
+
+}
+
+.support-others-content-half p {
+  font-size: medium;
+}
+
+.support-others-content-half ul {
+  padding-left: 2rem;
+}
+
+.content-half ul li {
+  list-style: disc;
+}
+
+
+.support-ways-to-serve-others {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+}
+
+.support-ways-to-serve-others .inline-flex h4 {
+  padding: 3rem 0;
+}
+
+/* First the Grid */
+.support-gallery-grid {
+  display: grid;
+  /*grid-auto-flow: column;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(20ch, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  cursor: pointer;
+}
+
+/* The Picture Frame */
+.support-gallery-frame {
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* The Images */
+.support-gallery-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.support-gallery-img:hover {
+  opacity: .7;
+}
+
+
+/* =============================================================================
+   PAGE: About us
+   Curretnly About us page is re-direct to Who we are page. 
+   Who we are page => Team members => Know more => about us
+   ============================================================================= */
+
+.about-us-cover {
   width: 100%;
   height: 50vh;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/events-cover.png);
@@ -1396,71 +1655,72 @@ line-height: 155.023%; /* 1.744rem */
   color: #FFF;
   text-align: center;
 }
-.about-us{
+
+.about-us {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
-.about-us-container{
+
+.about-us-container {
   display: flex;
   max-width: 60%;
   padding: 1rem;
- 
+
 }
-.about-us-content-section{
+
+.about-us-content-section {
   flex: 0 0 50%;
   padding: 0.5rem;
-  /*max-width: 60%;*/
-  
 }
-.about-us-image-section{
- 
+
+.about-us-image-section {
   flex: 0 0 50%;
-  /*max-width: 50%;*/
-  
 }
-.about-us-image-section img{
- display: block;
- border-radius: 1rem;
- padding: 0.5rem;
+
+.about-us-image-section img {
+  display: block;
+  border-radius: 1rem;
+  padding: 0.5rem;
   max-width: 100%;
   height: auto;
 }
-.about-us-content-section .about-us-title{
+
+.about-us-content-section .about-us-title {
   padding: 0rem 0.5rem;
   text-transform: uppercase;
   font-size: large;
 }
-.about-us-content-section .about-us-content .heading-with-logo{
+
+.about-us-content-section .about-us-content .heading-with-logo {
   padding: 2rem 0.5rem;
   color: #5d5d5d;
   font-size: small;
 }
-.about-us-content-section .about-us-content p{
 
+.about-us-content-section .about-us-content p {
   padding: 0 0.5rem;
   font-size: small;
   line-height: 1.5;
   text-align: justify;
-  
 }
 
-.about-us-content-section .about-us-social-icon{
+.about-us-content-section .about-us-social-icon {
   padding: 1rem 0;
-
 }
-.about-us-content-section .about-us-social-icon i{
-  
+
+.about-us-content-section .about-us-social-icon i {
   color: #a52a2a;
   font-size: medium;
   padding: 0rem 0.6rem;
 }
-.about-us-content-section .about-us-social-icon i:hover{
+
+.about-us-content-section .about-us-social-icon i:hover {
   color: #3d3d3d;
 }
-.about-us-content .btn a{
-  color:#000;
+
+.about-us-content .btn a {
+  color: #000;
 }
 
 .about-team-message {
@@ -1472,99 +1732,146 @@ line-height: 155.023%; /* 1.744rem */
   align-items: center;
   background-color: #F6F6F6;
   padding: 3.125rem 4.25rem;
-  /*padding: 3.125rem 6.25rem;*/
 
 }
 
+/* =============================================================================
+   PAGE: Newsletter
+   Styles specific to the Newsletter page.
+   ============================================================================= */
 
-
-/* Events page */
-.events-cover {
+.newsletter-cover {
   width: 100%;
   height: 50vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/events-cover.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/newsletter-cover.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
   text-align: center;
 }
-.events{
 
+/* ---------------------------------------------------------------------
+   SECTION: A Great Way to Stay In Touch
+   PAGE: Newsletter
+   --------------------------------------------------------------------- */
+.monthly-news-letter {
   position: relative;
   display: flex;
   flex-basis: 80%;
   height: auto;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/vector.svg);
-  background-repeat: no-repeat;
-  background-position:top;
-  background-size: 20% auto ;
-  
-  /*padding: 3.125rem 6.25rem;*/
+  padding: 1rem;
 }
-.events-text{
 
+.monthly-news-letter-text {
   color: #303030;
   text-align: center;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 155.023%;
   text-wrap: pretty;
-  /* 27.904px */
-}
-.events .inline-flex h4{
-  padding: 2rem 0;
-}
-.events .inline-flex h2{
-  padding: 3rem 0;
 }
 
-.upcoming-events-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  min-height: 500px;
-  background-color:#D9D9D9;
+.monthly-news-letter ul li input[type=text] {
+  display: block;
+  width: 28.4375rem;
+  height: 3.125rem;
+  border: 1px solid #A9A9A9;
+  background: #FFF;
+  padding: 1rem;
   margin: 1rem auto;
-  
-}
-.events-about-hp{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  background-color:#D9D9D9;
-  
-}
-.events-about-hp .inline-flex h4{
-  padding: 3rem 0;
-}
-.events-image img{
-  width: 500px;
-  height: 300px;
-  
 }
 
+/* The checkbox container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
 
-/* help ukraine page */
-.ukraine-cover {
-  width: 100%;
-  height: 50vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/ukraine-cover.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #FFF;
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.monthly-news-letter h2 {
+  padding: 2rem 0;
+  color: #303030;
   text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 155.023%;
+  /* 3.488rem */
 }
 
+/* =============================================================================
+   PAGE: How is a sunday like?
+   Home page => How is a sunday like
+   ============================================================================= */
 
+/* =============================================================================
+   PAGE: Contact us
+   Styles specific to the Contact us page.
+   ============================================================================= */
 
-/* contact-us page */
 .contact-us-cover {
   width: 100%;
   height: 50vh;
@@ -1575,6 +1882,11 @@ line-height: 155.023%; /* 1.744rem */
   color: #FFF;
   text-align: center;
 }
+
+/* ---------------------------------------------------------------------
+   SECTION: Get in Touch With Us
+   PAGE: Contact us
+   --------------------------------------------------------------------- */
 .contact-us {
   position: relative;
   display: flex;
@@ -1583,7 +1895,6 @@ line-height: 155.023%; /* 1.744rem */
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /*padding: 3.125rem 6.25rem;*/
 }
 
 .contat-us-text {
@@ -1593,10 +1904,7 @@ line-height: 155.023%; /* 1.744rem */
   font-weight: 500;
   line-height: 155.023%;
   text-wrap: pretty;
-  
-  /* 27.904px */
- 
-} 
+}
 
 .contact-us ul li input[type=text] {
   display: block;
@@ -1608,7 +1916,8 @@ line-height: 155.023%; /* 1.744rem */
   margin: 1rem auto;
 }
 
-.contact-us li input[type=text], textarea {
+.contact-us li input[type=text],
+textarea {
   display: block;
   width: 28.4375rem;
   height: 8.9375rem;
@@ -1617,6 +1926,7 @@ line-height: 155.023%; /* 1.744rem */
   margin: 1rem auto;
   resize: none;
 }
+
 /* The checkbox container */
 .contact-us-checkbox-container {
   display: block;
@@ -1651,12 +1961,12 @@ line-height: 155.023%; /* 1.744rem */
 }
 
 /* On mouse-over, add a grey background color */
-.contact-us-checkbox-container:hover input ~ .contact-us-checkmark {
+.contact-us-checkbox-container:hover input~.contact-us-checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.contact-us-checkbox-container input:checked ~ .contact-us-checkmark {
+.contact-us-checkbox-container input:checked~.contact-us-checkmark {
   background-color: #2196F3;
 }
 
@@ -1668,7 +1978,7 @@ line-height: 155.023%; /* 1.744rem */
 }
 
 /* Show the checkmark when checked */
-.contact-us-checkbox-container input:checked ~ .contact-us-checkmark:after {
+.contact-us-checkbox-container input:checked~.contact-us-checkmark:after {
   display: block;
 }
 
@@ -1685,288 +1995,306 @@ line-height: 155.023%; /* 1.744rem */
   transform: rotate(45deg);
 }
 
+/* =============================================================================
+   PAGE: GDPR Privacy Policy
+   Home page => GDPR Privacy Policy 
+   ============================================================================= */
 
+/* =============================================================================
+   PAGE: Events
+   Home page => Upcoming events => event button 
+   ============================================================================= */
 
-/* newsletter page */
-.newsletter-cover {
+.events-cover {
   width: 100%;
   height: 50vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/newsletter-cover.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/events-cover.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
   text-align: center;
 }
-  .monthly-news-letter {
-    position: relative;
-    display: flex;
-    flex-basis: 80%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    /*padding: 3.125rem 6.25rem;*/
-  }
-  
-  .monthly-news-letter-text {
-    color: #303030;
-    text-align: center;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 155.023%;
-    text-wrap: pretty;
-    
-    /* 27.904px */
-   
-  } 
-  .monthly-news-letter ul li input[type=text] {
-    display: block;
-    width: 28.4375rem;
-    height: 3.125rem;
-    border: 1px solid #A9A9A9;
-    background: #FFF;
-    padding: 1rem;
-    margin: 1rem auto;
-  }
-  
-  /* The checkbox container */
-.checkbox-container {
-  display: block;
+
+.events {
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: flex;
+  flex-basis: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 20% auto;
 }
 
-/* Hide the browser's default checkbox */
-.checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.events-text {
+  color: #303030;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 155.023%;
+  text-wrap: pretty;
 }
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+.events .inline-flex h4 {
+  padding: 2rem 0;
 }
 
-/* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
-  background-color: #ccc;
+.events .inline-flex h2 {
+  padding: 3rem 0;
 }
 
-/* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
-  background-color: #2196F3;
+.upcoming-events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  min-height: 500px;
+  background-color: #D9D9D9;
+  margin: 1rem auto;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+.events-about-hp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #D9D9D9;
 }
 
-/* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-  display: block;
+.events-about-hp .inline-flex h4 {
+  padding: 3rem 0;
 }
 
-/* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.events-image img {
+  width: 500px;
+  height: 300px;
 }
- 
-  .monthly-news-letter h2{
-    padding: 2rem 0;
-    color: #303030;
-    text-align: center;
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 155.023%; /* 3.488rem */
-  }
 
-  
-  
+/* =============================================================================
+   PAGE: Help Ukraine
+   Styles specific to the Help Ukraine page.
+   ============================================================================= */
 
-/* support page */
-.support-cover {
+.ukraine-cover {
   width: 100%;
   height: 50vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/support-cover.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(../images/ukraine-cover.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
   text-align: center;
 }
-  .support-others{
 
-    position: relative;
-    display: flex;
-    flex-basis: 80%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/vector.svg);
-    background-repeat: no-repeat;
-    background-position:top;
-    background-size: 25% auto ;
-    
-    /*padding: 3.125rem 6.25rem;*/
-  }
-  .support-others-text{
+/* ---------------------------------------------------------------------
+   SECTION: Need Help? Want to Donate?
+   PAGE: Help Ukraine
+   --------------------------------------------------------------------- */
 
-    color: #303030;
-    text-align: center;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 155.023%;
-    text-wrap: pretty;
-    /* 27.904px */
-  }
-  .support-others .inline-flex h4{
-    padding: 3rem 0;
-  }
-  .support-others-text a {
-    color: #000;
-    text-decoration: underline;
-    font-weight: 800;
-  }
-  .support-others h2{
-    padding: 2rem 0;
-    color: #303030;
-    text-align: center;
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 155.023%; /* 3.488rem */
-  }
-  
-  /* Get-involved image text */
-  .support-others-container {
-    /*display: flex;
-    justify-content:center;
-    flex-wrap: wrap;*/
-    /*text-align: justify;*/
-    /*text-wrap: pretty;
-    align-items: flex-start;*/
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-    padding: 2rem;
-    text-align: justify;
-    text-wrap: pretty;
-    
-    
-  }
-  .support-others-card{
-    display: flex;
-    flex: 1 1 50%;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .support-others-container img{
-    display: flex;
-    width: 100%;
-    border-radius: 1rem;
-    flex-wrap: wrap;
-    object-fit: cover;
-    object-position: center;
-    
-  }
-  
-   .support-others-image-half {
-    flex-basis:  30%;
-    padding: 1rem;
-   
-  }
-  
-  .support-others-content-half {
-   flex-basis:40%;
-    padding: 1rem; 
-   
-  }
-  .support-others-content-half p{
-    font-size: medium;
-  }
-  .support-others-content-half ul{
-   padding-left: 2rem;
-  }
-  .content-half ul li{
-    list-style: disc;
-  } 
+.donate-help-container {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  /* Allows items to wrap onto the next line as needed */
+  justify-content: space-around;
+  margin: 0 auto;
+
+}
+
+/*Testing my transperent button */
+
+.donate-help-column {
+  flex-basis: 50%;
+  /* Makes both columns take up equal space */
+  max-width: 60%;
+  padding: 20px;
+  /* Adds some spacing inside each column */
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  justify-content: center;
+  /* Center children vertically */
+  align-items: center;
+  /* Center children horizontally */
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+  /* Adds space below the social icons */
+  /* Add your styling for the social icons here */
+}
+
+.donate-help-container hr {
+
+  display: block;
+  width: 100%;
+  /* Adjust this value as needed */
+  margin: 20px auto;
+  /* Centers the hr */
+  height: 1px;
+  background-color: #000;
+  /* Adjust the color as needed */
+  border: none;
+
+}
+
+/* ---------------------------------------------------------------------
+   SECTION: What we do
+   PAGE: Help Ukraine
+   --------------------------------------------------------------------- */
+
+.ukraine-what-we-do {
+  display: flex;
+  position: relative;
+  flex-basis: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 4.25rem;
+}
+
+.ukraine-what-we-do h4 {
+  padding: 2rem 0;
+}
+
+.ukraine-what-we-do-text {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 155.023%;
+  text-wrap: pretty;
+
+}
 
 
-  .support-ways-to-serve-others{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-   }
-   
-   .support-ways-to-serve-others .inline-flex h4{
-     padding: 3rem 0;
-   }
-   
-   /* First the Grid */
-   .support-gallery-grid {
-     display: grid;
-     /*grid-auto-flow: column;*/
-     /*grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));*/
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(auto-fit, minmax(20ch, 1fr));
-     grid-gap: 1.5rem;
-     justify-items: center;
-     cursor: pointer;
-   }
-   
-   /* The Picture Frame */
-   .support-gallery-frame {
-     padding: .5rem;
-     font-size: 1.2rem;
-     text-align: center;
-     color: #333;
-   }
-   
-   /* The Images */
-   .support-gallery-img {
-     max-width: 100%;
-     height: auto;
-     object-fit: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     transition: opacity 0.25s ease-in-out;
-   }
 
-   .support-gallery-img:hover {
-     opacity: .7;
-   }
+/* ---------------------------------------------------------------------
+   SECTION: Column section
+   PAGE: Help Ukraine
+   --------------------------------------------------------------------- */
+
+.ukraine-how-we-do {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3.125rem 4.25rem;
+}
+
+.ukraine-how-we-do h4 {
+  padding: 2rem 0;
+}
+
+.ukraine-how-we-do-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.ukraine-how-we-do-container .ukraine-how-we-do-row {
+  width: 300px;
+}
+
+.icon img {
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ukraine-how-we-do-title {
+  color: #E2516D;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.023%;
+}
+
+.ukraine-how-we-do-description {
+  color: #C4C4C4;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155.023%;
+}
+
+.ukraine-how-we-do-description a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 
-/* join-us page */
+/* ---------------------------------------------------------------------
+   SECTION: Helping Ukraine (Image gallery)
+   PAGE: Help Ukraine
+   --------------------------------------------------------------------- */
+.helping-ukraine {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+}
+
+.helping-ukraine .inline-flex h4 {
+  padding: 3rem 0;
+}
+
+.help-ukraine-grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  /* Default margin for larger screens */
+}
+
+.help-ukraine-gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.help-ukraine-gallery-item img {
+  width: 100%;
+  /* Makes the image fill its container */
+  height: auto;
+  /* Maintains the aspect ratio of the image */
+  display: block;
+  /* Removes any extra space below the image */
+  /*margin: auto;*/
+  transition: transform 0.5s ease-out;
+  cursor: zoom-in;
+}
+
+.help-ukraine-gallery-item:hover img {
+  transform: scale(2);
+  /* Enlarges the image; adjust scale as needed */
+  cursor: zoom-out;
+}
+
+
+
+
+/* =============================================================================
+   PAGE: Join us
+   Styles specific to the Join us page.
+   ============================================================================= */
+
 .join-us-cover {
   width: 100%;
   height: 50vh;
@@ -1977,7 +2305,8 @@ line-height: 155.023%; /* 1.744rem */
   color: #FFF;
   text-align: center;
 }
-.join-us-events{
+
+.join-us-events {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1997,7 +2326,7 @@ line-height: 155.023%; /* 1.744rem */
 }
 
 .join-us-card-container .event {
-  
+
   max-width: 300px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   cursor: pointer;
@@ -2010,7 +2339,7 @@ line-height: 155.023%; /* 1.744rem */
   object-position: center;
 }
 
-.join-us-card-container .event .join-us-card-image img:hover{
+.join-us-card-container .event .join-us-card-image img:hover {
   opacity: .7;
 }
 
@@ -2051,8 +2380,10 @@ line-height: 155.023%; /* 1.744rem */
 
 }
 
-/* Responsive design break points*/
 
+/* =============================================================================
+   Responsive device breakpoints
+   ============================================================================= */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 786px) {
@@ -2060,34 +2391,73 @@ line-height: 155.023%; /* 1.744rem */
   nav {
     display: none;
   }
-  
-  .get-involved-card{
+
+  .get-involved-card {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .content-half ul li{
+
+  .content-half ul li {
     list-style: none;
-  } 
-  .image-container{
+  }
+
+  .image-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .support-others-card{
+
+  .support-others-card {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  
-  .about-us-container{
-   display: block;
-   flex-direction: column;
+
+  .about-us-container {
+    display: block;
+    flex-direction: column;
     width: 100%;
   }
-  
-  
-  .footer-middle,.get-involved-container,
+
+  .donate-help-container {
+    flex-direction: column;
+  }
+
+  .donate-help-column {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .donate-help-container hr {
+    width: calc(100% - 40px);
+    /* Adjust to ensure it fits within the content area */
+    margin: 20px auto;
+    /* Center <hr> with automatic horizontal margins */
+  }
+
+  .help-ukraine-grid-gallery {
+    grid-template-columns: 1fr;
+    /* 1 column for small devices */
+    gap: 5px;
+    /* Adjusted gap for small devices */
+    margin: 20px;
+    /* Adjusted margin for small devices */
+    max-width: calc(100% - 40px);
+    /* Full width minus margin */
+  }
+
+  .help-ukraine-gallery-item img {
+    width: 100%;
+    /* Ensure images are full width within their container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin: auto;
+  }
+
+  .footer-middle,
+  .get-involved-container,
   .footer-menu {
     flex-direction: column;
     justify-content: center;
@@ -2096,7 +2466,7 @@ line-height: 155.023%; /* 1.744rem */
     width: 100%;
     text-align: center;
   }
-  
+
   .footer-links,
   .social-icons .footer-end {
     display: inline;
