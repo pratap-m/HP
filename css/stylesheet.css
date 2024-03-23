@@ -8,9 +8,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--font-family-inter);
   font-style: normal;
   box-sizing: border-box;
+}
+
+html{
   scroll-behavior: smooth;
 }
 
@@ -22,13 +24,11 @@
 }
 
 body {
+  font-family: var(--font-family-inter);
   text-rendering: optimizeSpeed;
 }
 
-img {
 
-  max-width: 100%;
-}
 
 /* Custom variables */
 
@@ -80,56 +80,41 @@ img {
 
 .btn {
   display: inline-flex;
-  /* Allows the element to size according to its content */
   background-color: transparent;
-  /* Button is transparent initially */
   border: none;
   border-radius: 0.7rem;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  /* Button padding, adjust for text content */
   font-size: 16px;
-  /* Text size, adjust as needed */
   cursor: pointer;
-  /* Changes the cursor to a pointer */
   text-align: center;
-  /* Ensures text is centered */
   text-decoration: none;
-  /* Removes underline from links */
   transition: all 0.5s ease;
-  /* Smooth transition for all properties */
   margin: 0.8rem;
 }
 
 .btn-primary {
   color: #FFF;
-  /* Text color for visibility on light backgrounds */
   border: 1px solid #FFF;
-  /* Thinner border */
 }
 
 .btn-secondary {
   color: #000;
   border: 1px solid #000;
-  /* Thinner border */
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-
   background-color: #0056b3;
-  /* Slightly darker shade for primary button hover */
-  color: #fFF;
+  color: #FFA500;
   border-color: #004094;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   background-color: #6c757d;
-  /* Different color for secondary button hover */
   color: #FFF;
   border-color: #545b62;
-
 }
 
 /* Inline Icon with text */
@@ -140,14 +125,13 @@ img {
   min-width: 150px;
   min-height: 150px;
 }
-
 .inline-icon img {
   max-width: 40%;
   max-height: 40%;
 }
 
-li {
-
+ul,
+ol {
   list-style: none;
 }
 
@@ -200,12 +184,13 @@ p {
 .inline-flex {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
 }
 
 .heading-with-logo {
   font-size: 1rem;
-  line-height: 155.023%;
-  letter-spacing: 8px;
+  line-height: 1.55;
+  letter-spacing: 0.5em;
   font-weight: 700;
   text-transform: uppercase;
   gap: 0.9rem;
@@ -216,6 +201,7 @@ p {
   width: 0.889rem;
   height: auto;
 }
+
 
 /* reusable sections */
 
@@ -237,15 +223,7 @@ p {
   padding: 2.7rem;
 }
 
-.livestream-service .btn {
-  display: inline-flex;
-  padding: 0.75rem 1.875rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  border-radius: 0.625rem;
-  border: 1px solid #FFF;
-}
+
 
 .livestream-service h2 {
   color: #FFF;
@@ -333,56 +311,60 @@ p {
    SECTION: Header
    PAGE: Home
    --------------------------------------------------------------------- */
+
 .header {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: calc(100vh);
   min-height: calc(100vh);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/image1@2x.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/image1@2x.png') no-repeat center/cover;
 }
+
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2.5rem;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 2.5rem 10%;
+  position: relative;
 }
-
-nav ul li {
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links ul li {
+  padding: 0.5rem 0.75rem;
+}
+nav ul li {  
   display: inline-block;
   padding: 0.5rem 0.75rem;
-
 }
 
 nav ul li img {
   width: 1.375rem;
   height: 1rem;
 }
-
-nav ul li a {
-  transition: all 0.5s ease-in-out;
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
 }
 
-nav ul li a:hover {
+.nav-links ul li a:hover {
   color: #f44336;
-  transition: 0.5s;
 }
 
 .logo img {
   width: 7.313rem;
   height: auto;
-  transition: all 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .logo:hover img {
-  transform: scale(1.2, 1.2);
-  transition: all 0.5s ease;
+  transform: scale(1.2);
 }
 
 /* Language switcher*/
@@ -406,12 +388,6 @@ nav ul li img {
   color: white;
 }
 
-/* responsive burger icon set to hidden */
-
-nav .fa {
-  display: none;
-  color: white;
-}
 
 /* Text and button in the header section */
 .header-text {
@@ -425,39 +401,70 @@ nav .fa {
 }
 
 
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top: 2.5rem;
+  font-size: 30px;
+  display: none; /* Initially hidden */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 99; /* Ensure it's clickable above other elements */
+}
+
+.hamburger, .close {
+  display: block;
+  color: white;
+}
+
+/* Hide the close icon by default */
+.close {
+  display: none;
+}
+
+
+
 /* ---------------------------------------------------------------------
    SECTION: Welcome to Heart Prague
    PAGE: Home
    --------------------------------------------------------------------- */
-.welcome-hp {
-  display: flex;
-  position: relative;
-  width: 0 0 50%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 3.125rem 4.25rem;
-}
-
-.welcome-hp-text {
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 155.023%;
-}
-
-.welcome-hp h3 {
-  text-align: center;
-  font-family: var(--font-family-kallimata);
-  font-size: 5.938rem;
-  font-weight: 400;
-  line-height: 188.023%;
-  /* 147.272px */
-}
-
+   .welcome-hp {
+    display: flex;
+    flex-basis: 50%;
+    position: relative;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3.125rem 4.25rem;
+  }
+  
+  .welcome-hp-text {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 155.023%;
+  }
+  
+  .welcome-hp h3 {
+    text-align: center;
+    font-family: var(--font-family-kallimata);
+    font-size: clamp(2.5rem, 5vw + 1rem, 5.938rem); 
+    font-weight: 400;
+    line-height: 188.023%;
+    /* 147.272px */
+  }
 
 /* ---------------------------------------------------------------------
    SECTION: Start your journey here
@@ -2128,6 +2135,7 @@ textarea {
   /* Add your styling for the social icons here */
 }
 
+
 .donate-help-container hr {
 
   display: block;
@@ -2388,9 +2396,51 @@ textarea {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 786px) {
 
-  nav {
+
+
+  /* Hamburger menu item */
+    .nav-links {
+      display: none; 
+      opacity: 0; 
+      transform: translateY(-20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      /* Adjusted background color for a more subtle crystal glass effect */
+      background-color: rgba(255, 255, 255, 0.2); 
+      backdrop-filter: blur(10px); 
+      top: 0;
+      left: 0;
+      padding-top: 60px;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+    }
+    .nav-links ul li {
+      text-align: center;
+    }
+    .menu-icon {
+      display: block; /* Show menu icon on small screens */
+    }
+    /* Toggle display of the hamburger and close icons */
+    .menu-toggle:checked ~ .menu-icon .hamburger {
+      display: none;
+    }
+    .menu-toggle:checked ~ .menu-icon .close {
+      display: block;
+    }
+  
+    .menu-toggle:checked ~ .nav-links {
+      display: flex; 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+   .line,.lang-switcher__select, .nav-links ul li img{
     display: none;
-  }
+   }
 
   .get-involved-card {
     display: flex;
@@ -2431,30 +2481,24 @@ textarea {
 
   .donate-help-container hr {
     width: calc(100% - 40px);
-    /* Adjust to ensure it fits within the content area */
     margin: 20px auto;
-    /* Center <hr> with automatic horizontal margins */
   }
 
   .help-ukraine-grid-gallery {
     grid-template-columns: 1fr;
-    /* 1 column for small devices */
     gap: 5px;
-    /* Adjusted gap for small devices */
     margin: 20px;
-    /* Adjusted margin for small devices */
     max-width: calc(100% - 40px);
-    /* Full width minus margin */
   }
 
   .help-ukraine-gallery-item img {
     width: 100%;
-    /* Ensure images are full width within their container */
     height: auto;
-    /* Maintain aspect ratio */
     display: block;
     margin: auto;
   }
+
+  
 
   .footer-middle,
   .get-involved-container,
@@ -2481,7 +2525,13 @@ textarea {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+  
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+
+}
