@@ -17,8 +17,15 @@
 	<section class="header">
 		<nav>
 			<div class="logo">
-				<a href="index.html"><img src="images/logo.png"></a>
+				<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
 			</div>
+			<!-- Hamburger toggle -->
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+			<label for="menu-toggle" class="menu-icon">
+				<span class="hamburger">&#9776;</span>
+				<span class="close">X</span> <!-- Close icon -->
+			</label>
+
 			<div class="nav-links">
 				<ul>
 					<li><a href="im-new.html">I'M NEW</a></li>
@@ -27,37 +34,30 @@
 					<li><a href="get-involved.html">GET INVOLVED</a></li>
 					<li><a href="support.html">SUPPORT</a></li>
 					<li><a class="line" src="images/line.svg">|</a></li>
-					<li><img src="images/livestream.svg"></li>
-					<li><img src="images/fb.svg" /></li>
-					<li><img src="images/insta.svg" /></li>
-					<li><img src="images/youtube.svg" /></li>
+					<li><img src="images/livestream.svg" alt="Live Stream"></li>
+					<li><img src="images/fb.svg" alt="Facebook"></li>
+					<li><img src="images/insta.svg" alt="Instagram"></li>
+					<li><img src="images/youtube.svg" alt="YouTube"></li>
 					<li><a class="line" src="images/line.svg">|</a></li>
 					<li>
-						<select class="lang-switcher__select" onchange="">
-							<option value="#" data-flag="#" selected="">EN</option>
-							<option value="#" data-flag="#">CS</option>
-							<option value="#" data-flag="#">UA</option>
+						<select class="lang-switcher__select">
+							<option value="#" selected>EN</option>
+							<option value="#">CS</option>
+							<option value="#">UA</option>
 						</select>
-
 					</li>
+					
 				</ul>
-
+				
 			</div>
-			<!--<i class="fa fa-bars"></i>-->
 		</nav>
-
-		<!-- Header text (Isse with safari browser)-->
-
 		<div class="header-text">
-			<div>
-				<p>Join us on Sundays at 10 am (English/Czech) or at 12 pm (English) or at 4 pm Ukrainian</p>
-			</div>
+			<p>Join us on Sundays at 10 am (English/Czech) or at 12 pm (English) or at 4 pm Ukrainian</p>
 			<div class="button-container">
 				<a href="im-new.html" class="btn btn-primary">Join us this sunday</a>
 				<a href="ukraine.html" class="btn btn-primary">Серце для України</a>
 			</div>
 		</div>
-
 	</section>
 	<main>
 		<!-- Welcome HP section -->
@@ -135,6 +135,7 @@
 				<img alt="" src="images/group.svg">
 				<h4>upcoming events</h4>
 			</div>
+			
 			<div class="card-container">
 				<div class="event">
 					<div class="card-image">
@@ -190,7 +191,7 @@
 			</div>
 			<a href="events.html">
 				<div class="button-container">
-					<a href="#" class="btn btn-secondary">events</a>
+					<a href="events.html" class="btn btn-secondary">events</a>
 				</div>
 
 			</a>
